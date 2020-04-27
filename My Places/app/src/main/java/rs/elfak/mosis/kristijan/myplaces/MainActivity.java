@@ -1,5 +1,6 @@
 package rs.elfak.mosis.kristijan.myplaces;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -27,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                Intent i = new Intent(MainActivity.this, EditMyPlaceActivity.class);
+                startActivityForResult(i, NEW_PLACE);
             }
         });
     }
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+
+    static int NEW_PLACE = 1;
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -53,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(id == R.id.new_place_item) {
             Toast.makeText(this, "New Place!", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, EditMyPlaceActivity.class);
+            startActivityForResult(i, NEW_PLACE);
         }
         else if(id == R.id.my_places_list_item) {
             Toast.makeText(this, "My Places!", Toast.LENGTH_SHORT).show();
@@ -66,5 +73,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == Activity.RESULT_OK)
+        {
+            Toast.makeText(this, "New Place added", Toast.LENGTH_SHORT).show();
+        }
     }
 }

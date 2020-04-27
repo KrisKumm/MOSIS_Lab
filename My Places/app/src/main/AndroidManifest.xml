@@ -4,18 +4,24 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:fullBackupContent="true">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ViewMyPlacesActivity"
+            android:label="@string/title_activity_view_my_places"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".EditMyPlaceActivity"
+            android:label="@string/title_activity_edit_my_place"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MyPlacesList"
             android:label="@string/title_activity_my_places_list"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -29,8 +35,7 @@
         <activity
             android:name=".About"
             android:label="About"
-            android:theme="@style/Theme.AppCompat.Light.Dialog">
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
     </application>
 
 </manifest>
