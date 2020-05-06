@@ -61,6 +61,7 @@ public class MyPlacesMapsActivity extends AppCompatActivity {
     private int EDIT_PLACE = 1;
     private Menu menu;
 
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
