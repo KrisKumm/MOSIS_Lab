@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +48,10 @@ public class ViewMyPlacesActivity extends AppCompatActivity {
             twName.setText(place.getName());
             TextView twDesc = (TextView)findViewById(R.id.viewmyplaces_desc_text);
             twDesc.setText(place.getDesc());
+            TextView latEdit = (TextView)findViewById(R.id.viewmyplaces_lat_edit);
+            latEdit.setText(place.getLatitude());
+            TextView lonEdit = (TextView)findViewById(R.id.viewmyplaces_lon_edit);
+            lonEdit.setText(place.getLongitude());
         }
         final Button finishedButton = (Button)findViewById(R.id.viewmyplaces_finished_button);
         finishedButton.setOnClickListener(new View.OnClickListener()

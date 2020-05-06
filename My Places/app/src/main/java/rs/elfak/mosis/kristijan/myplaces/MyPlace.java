@@ -3,6 +3,10 @@ package rs.elfak.mosis.kristijan.myplaces;
 public class MyPlace {
     String name;
     String description;
+    String longitude;
+    String latitude;
+    int ID;
+
     public MyPlace(String nme, String desc)
     {
         this.name = nme;
@@ -34,4 +38,12 @@ public class MyPlace {
     {
         return this.name;
     }
+
+    public String getLongitude(){return longitude;}
+    public String getLatitude(){return latitude;}
+    public void setLongitude(String longitude){this.longitude = longitude;}
+    public void setLatitude(String latitude){this.latitude = latitude;}
+
+    public int getID(){return ID;}
+    public void setID(int id){this.ID = id;}
 }
