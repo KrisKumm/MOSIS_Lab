@@ -15,7 +15,7 @@
         android:id="@+id/editText_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="kristijan.ilic@elfak.rs"/>
+        android:text="kristijanilic997@gmail.com"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         android:id="@+id/editText_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="kriselfak"/>
+        android:text="kriskum4"/>
     <Button
         android:id="@+id/authenticate_button"
         android:layout_width="match_parent"

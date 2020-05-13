@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "894311396804",
+    "firebase_url": "https://my-places-f49fa.firebaseio.com",
+    "project_id": "my-places-f49fa",
+    "storage_bucket": "my-places-f49fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894311396804:android:66aca80966cfe73f742091",
+        "android_client_info": {
+          "package_name": "rs.elfak.mosis.kristijan.myplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894311396804-a7tjl5vt43akiqh4hi2mgp3ma04jtmtc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5EH1CwL15HzroIhA9qe99-m5-RAWWmWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894311396804-a7tjl5vt43akiqh4hi2mgp3ma04jtmtc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
